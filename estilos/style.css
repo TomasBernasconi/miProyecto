@@ -20,9 +20,9 @@ body{
 }
 header{
     grid-area:cabeza;
-    background-color: rgb(78, 68, 68);
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 90%);
     border:solid black ;
-    height: 70px;
 }
 .cabezaFlex{
     display: flex;
@@ -69,7 +69,7 @@ footer{
     font-weight: bold;
     font-size: 10px;
     text-align: center;
-    background-color: rgb(78, 68, 68);
+    background-color: #28313b
 }
 /* ------------------------------------------------------------------------------------------------------- */
 /*                                                INDEX                                                    */
@@ -77,11 +77,11 @@ footer{
 #gridAreasIndex{
     display: grid;
     grid-template-areas: 
-    "cabeza cabeza cabeza cabeza"
-    "video video video video"
-    "serv serv serv serv"
-    "iconos iconos iconos iconos"
-    "pie pie pie pie";
+    "cabeza"
+    "video"
+    "serv"
+    "iconos"
+    "pie";
 }
 #fondoIndex{
     display: none;
@@ -104,7 +104,7 @@ footer{
     z-index: 1;
 }
 .videoHeader video{
-    width: 100%;
+    width: 100vw;
     opacity: 0.3;
 }
 /*    Texto sobre video    */
@@ -123,13 +123,16 @@ footer{
 .descripcionHome h3{
     font-size: 25px;
 }
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+  }
 /*       Texto extra       */
 .servicios{
     grid-area:serv;
     color: black;
     font-size: 23px;
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: rgb(78, 68, 68);
+    background-color: #28313b;
     text-align: center;
     border: black solid 2px;
 }
@@ -161,6 +164,10 @@ footer{
     font-style: italic;
     text-align: center;
     color:black;
+}
+.icon:hover{
+    background-color: darkgrey;
+    color: white;
 }
 /* ------------------------------------------------------------------------------------------------------- */
 /*                                            QUIENES SOMOS                                                */
@@ -194,7 +201,8 @@ footer{
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: rgba(107,110,117,0.8);
+    background-color: #2d3436;
+    background-image: linear-gradient(160deg, #2d3436 0%, #d3d3d3 74%);
     font-size: 20px;
     border:black solid 2px;
 }
@@ -222,15 +230,31 @@ footer{
 }
 .CEO img{
     width: 20vw;
+    transition: all 1500ms;
 }
 .ingEstr img{
     width: 20vw;
+    transition: all 3s;
 }
 .ingSist img{
     width:20vw;
+    transition: all 3s;
 }
 .disPerro img{
     width: 20vw;
+    transition: all 3s;
+}
+.CEO img:hover{
+    border-radius: 50%;
+}
+.ingEstr img:hover{
+    border-radius: 50%;
+}
+.ingSist img:hover{
+    border-radius: 50%;
+}
+.disPerro img:hover{
+    border-radius: 50%;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
@@ -354,6 +378,14 @@ footer{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+.coverImages p img{
+    width: auto;
+    transition: 3s;
+}
+.coverImages p img:hover{
+    position: absolute;
+    width: 400px;
+}
 /* ------------------------------------------------------------------------------------------------------- */
 /*                                              CONTACTO                                                   */
 /* ------------------------------------------------------------------------------------------------------- */
@@ -379,7 +411,9 @@ footer{
     grid-area: formulario;
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 20px;
-    background-color:rgba(78, 68, 68, 0.671);
+    background-color: #c2b6b6;
+    background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
+
     margin: 10px;
     border-radius: 10px;
 }
