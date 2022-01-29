@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Print4All</title>
+    <link rel="shortcut icon" href="../imagenes/print4allpng.png">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+<body id="gridAreasContacto">
+    <header id="cabeza" class="cabezaFlex">
+        <!-- <img class="logotipo" src="imagenes/logopng.png" alt="cerebro"> -->
+        <h2 class="logo">Print4All</h2>
+        <!--<section class="slogan">Printing Dreams</section>-->
+        <nav class="menu">
+            <span class="itemMenu"><a href="../index.html">INICIO</a></span>
+            <span class="itemMenu"><a href="quienes.html">NOSOTROS</a></span>
+            <span class="itemMenu"><a href="dise.html">DISEÑOS</a></span>
+            <span class="itemMenu"><a href="proyectos.html">PROYECTOS</a></span>
+            <span class="itemMenu"><a href="contacto.html">CONTACTO</a></span>
+        </nav>
+    </header>
+    <main>
+        <h2 id="contacto">Contactanos</h2>
+        <form action="" id="formularioCompleto" class="completeForm">
+            <div class="secccionNombre">
+                <label for="nombre" class="textos">Nombre:</label>
+                <input type="text" name="nombre" class="inputs">
+            </div>
+            <div class="seccionApellido">
+                <label for="apellido" class="textos">Apellido:</label>
+                <input type="text" name="apeliido" class="inputs">
+            </div>
+            <div class="seccionMail">
+                <label for="mail" class="textos">E-mail:</label>
+                <input type="email" name="mail" class="inputs">
+            </div>
+            <div class="seccionTelefono">
+                <label for="telefono" class="textos">Movil:</label>
+                <input type="tel" name="telefono" class="inputs">
+            </div>
+
+            <section class="selectorTrabajo">
+                <label for="asunto" class="asuntoMsj">Asunto:</label>
+                <select name="trabajo">
+                    <option value="diseno">Diseño</option>
+                    <option value="impresion">Impresion</option>
+                    <option value="desarrollo">Desarrollo</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </section>
+
+
+            <section class="particularEmpresa">
+ 
+                <div>Particular</div>
+                <input type="radio" name="oficio" value="particular"/>
+                <div>Empresa</div>
+                 <input type="radio" name="oficio" value="empresa"/>
+            </section>
+
+            <section class="msjUsuario">
+                <label for="mensaje" class="textos">Mensaje:</label><br>
+                <textarea name="mensaje" cols="50" rows="20" class="areaMsj"></textarea>
+            </section>
+            <input type="submit" value="Enviar" class="botonEnviar">
+        </form>
+    </main>
+    <footer>
+        <h5>Print4All® all right reserved</h5>
+    </footer>
+</body>

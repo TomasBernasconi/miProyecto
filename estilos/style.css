@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*#########################################################################################################*/
+/*                                               DESKTOP                                                   */
+/*#########################################################################################################*/
+
+*{
+    padding: 0;
+    margin: 0;
+    ;
+}
+/*--------- GENERAL ---------*/
+body{
+    background-color: rgba(107, 110, 117, 0.692);
+    height: 100vh;
+    position: relative;
+    width:100%;
+}
+header{
+    grid-area:cabeza;
+    background-color: rgb(78, 68, 68);
+    border:solid black ;
+    height: 70px;
+}
+.cabezaFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    font-style: italic;
+}
+/*Logo Print4All*/
+/* .logotipo{
+    width: 70px;
+} */
+
+/*section.slogan{
+    display: inline;
+    font-size: 60px;
+    font-family:'Bebas Neue', cursive;
+    position: absolute;
+    left:35%;
+    top:15px;
+    color:white;
+}*/
+
+/*Menu*/
+.itemMenu{
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+a, a:link, a:visited{
+    text-decoration: none;
+    color: gray;
+}
+main{
+    width: 100%;
+}
+footer{
+    grid-area:pie;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(78, 68, 68);
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                                INDEX                                                    */
+/* ------------------------------------------------------------------------------------------------------- */
+#gridAreasIndex{
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza cabeza"
+    "video video video video"
+    "serv serv serv serv"
+    "iconos iconos iconos iconos"
+    "pie pie pie pie";
+}
+#fondoIndex{
+    display: none;
+}
+/*           Video         */
+#videoPrincipal{
+    grid-area:video;
+    overflow: hidden;
+}
+.claseVideo{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    background-color: black;
+    z-index: 10;
+}
+.videoHeader{
+    grid-column: 1/4;
+    grid-row:1/4;
+    z-index: 1;
+}
+.videoHeader video{
+    width: 100%;
+    opacity: 0.3;
+}
+/*    Texto sobre video    */
+.descripcionHome{
+
+    text-align: center;
+    color: white;
+    z-index: 10;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    grid-column: 2;
+    grid-row: 2;
+}
+.descripcionHome h2{
+    font-size: 40px;   
+}
+.descripcionHome h3{
+    font-size: 25px;
+}
+/*       Texto extra       */
+.servicios{
+    grid-area:serv;
+    color: black;
+    font-size: 23px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(78, 68, 68);
+    text-align: center;
+    border: black solid 2px;
+}
+/*    Servicios ofrecidos    */
+
+#iconos{
+    grid-area: iconos;
+}
+.iconosFlex{
+   display: flex; 
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;
+   padding: 10px;
+}
+.icon{
+    border: black solid 3px;
+    border-radius: 10px;
+    padding: 10px 80px;
+    width: 100px;
+}
+.iconFoto{
+    width: 100px;
+}
+.iconText{
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    text-align: center;
+    color:black;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                            QUIENES SOMOS                                                */
+/* ------------------------------------------------------------------------------------------------------- */
+#gridAreasQuienes{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "sobreNosotros"
+    "descripcionNosotros"
+    "tituloQuienes"
+    "staff"
+    "pie"
+    ;
+    grid-template-rows: auto auto 200px auto 3fr auto;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.quienesSomos{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+.sobreNosotros{
+    grid-area: sobreNosotros;
+    background-color: rgba(78, 68, 68, 0.671);
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    border:black solid 2px;
+}
+.descripcionNosotros{ 
+    grid-area: descripcionNosotros; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: rgba(107,110,117,0.8);
+    font-size: 20px;
+    border:black solid 2px;
+}
+.tituloQuienes{
+    grid-area: tituloQuienes;
+    text-align: center;
+    background-color: rgb(78, 68, 68);
+    color: black;
+    font-size: 18px;
+    border:black solid 2px;
+}
+/*        IMAGENES DEL STAFF        */
+#staff{
+    grid-area: staff;
+}
+.claseStaff{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.CEO img{
+    width: 20vw;
+}
+.ingEstr img{
+    width: 20vw;
+}
+.ingSist img{
+    width:20vw;
+}
+.disPerro img{
+    width: 20vw;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                              PROYECTOS                                                  */
+/* ------------------------------------------------------------------------------------------------------- */
+#gridAreasProyectos{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "proyecto"
+    "subtituloProyecto"
+    "cubesat"
+    "protesis"
+    "metal"
+    "pie";
+}
+#tituloProyectos{
+    grid-area: proyecto;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgba(78, 68, 68, 0.671);
+    text-align: center;
+    color: black;
+    border:black solid 2px;
+}
+#subtituloProyectos{
+    grid-area: subtituloProyecto;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 65px;
+}
+/*         Explicacion Proyectos       */
+#proyect{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+#proyectoCubeSat{
+    grid-area: cubesat;
+}
+#proyectoProtesis{
+    grid-area: protesis;
+}
+#proyectoImpresora{
+    grid-area: metal;
+}
+.cubesat{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.cubesat img{
+    width: 40%;
+    border: transparent;
+    border-radius: 10px;
+}
+.protesis{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.protesis img{
+    width: 40%;
+    border: transparent;
+    border-radius: 10px;  
+}
+.impresoraMetal{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.impresoraMetal img{
+    width: 40%;
+    border: transparent;
+    border-radius: 10px;
+}
+.descProyecto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+.tituloProyecto{
+    font-size: 45px;
+}
+.textoProyecto{
+    font-size: 25px;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                               DISEÑOS                                                   */
+/* ------------------------------------------------------------------------------------------------------- */
+#gridAreasDise{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "dise"
+    "unaImagen"
+    "coverFlow"
+    "pie"
+    ;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto 1fr auto 10px;
+}
+#tituloDis{
+    grid-area: dise;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgba(78, 68, 68, 0.671);
+    color: black;
+    font-size: 24px;
+    border:black solid 2px;
+    text-align: center;
+}
+#subtituloDis{
+    grid-area: unaImagen;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 65px;
+    text-align: center;
+}
+#coverFlowDis{
+    grid-area: coverFlow;
+}
+.coverImages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+/*                                              CONTACTO                                                   */
+/* ------------------------------------------------------------------------------------------------------- */
+#gridAreasContacto{
+    display: grid;
+    grid-template-areas: 
+    "cabeza"
+    "contactanos"
+    "formulario"
+    "pie"
+    ;
+}
+#contacto{
+    grid-area: contactanos;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgba(78, 68, 68, 0.671);
+    color: black;
+    font-size: 24px;
+    border:black solid 2px;
+}
+#formularioCompleto{
+    grid-area: formulario;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+    background-color:rgba(78, 68, 68, 0.671);
+    margin: 10px;
+    border-radius: 10px;
+}
+.completeForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.particularEmpresa{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.selectorTrabajo{
+    margin-top: 20px;
+}
+.textos{
+    margin-left:5px;
+    margin-top: 20px;
+}
+.inputs{
+    width: 90%;
+    height: 20px;
+    color: green;
+    z-index: 10;
+    margin-top: 20px;
+}
+.msjUsuario{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.areaMsj{
+    width: 90%;
+    height: 400px;
+    border-radius: 10px;
+    align-content: flex-end;
+    margin: 5px;
+}
+.botonEnviar{
+    margin: 30px;
+}
+
+/*#########################################################################################################*/
+/*                                              SMARTPHONE                                                 */
+/*#########################################################################################################*/
+
+@media (max-width: 480px){
+    
+    /* GENERAL */
+
+    header{
+        height: 50px;
+    }
+    .cabezaFlex{
+        justify-content: center;
+    }
+    .logo{
+     display: none;
+    }
+    .itemMenu{
+        font-size: 15px;
+    }
+
+    /* INDEX */
+
+    #gridAreasIndex{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "fondo"
+        "serv"
+        "iconos"
+        "pie";
+    }
+    #fondoIndex{
+        display: block;
+        grid-area: fondo;
+        overflow: hidden;
+    }
+    .claseVideo{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        background-color: transparent;
+    }
+    .fotoFondoIndex img{
+        width: 100%;
+        z-index: 1;
+    }
+
+    .descripcionHome{
+        text-align: center;
+        color: black;
+        z-index: 10;
+        font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .descripcionHome h2{
+        font-size: 35px;  
+    }
+    .descripcionHome h3{
+        font-size: 20px;
+    }
+    .videoHeader{
+        display: none;
+    }
+    
+    .icon{
+        width: 30px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        align-content: center;
+    }
+    .iconFoto{
+        width: 30px;
+    }
+    .iconText{
+        display: none;
+    }
+     /* PROYECTOS */
+
+    .cubesat{
+        flex-direction: column;
+    }
+    .cubesat img{
+        width: 100%;
+    }
+    .protesis{
+        flex-direction: column;
+    }
+    .protesis img{
+        width: 100%;
+    }
+    .impresoraMetal{
+        flex-direction: column;
+    }
+    .impresoraMetal img{
+        width: 100%;
+    }
+    .descProyecto{
+        flex-direction: column;
+    }
+    .tituloProyecto{
+        font-size: 35px;
+        background-color: rgba(78, 68, 68, 0.671) ;
+        margin: 0%;
+        padding: 0%;
+    }
+    .textoProyecto{
+        font-size: 20px;
+    }
+}
+
+/*#########################################################################################################*/
+/*                                                TABLETS 1                                                */
+/*#########################################################################################################*/
+
+
+@media (min-width:481px) and (max-width:768px){
+    /* GENERAL */
+
+    header{
+        height: 50px;
+    }
+    .cabezaFlex{
+        justify-content: center;
+    }
+    .logo{
+     display: none;
+    }
+    .itemMenu{
+        font-size: 15px;
+    }
+
+    /* INDEX */
+
+    #gridAreasIndex{
+        display: grid;
+        grid-template-areas: 
+        "cabeza"
+        "fondo"
+        "serv"
+        "iconos"
+        "pie";
+    }
+    #fondoIndex{
+        display: block;
+        grid-area: fondo;
+        overflow: hidden;
+    }
+    .claseVideo{
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        background-color: transparent;
+    }
+    .fotoFondoIndex img{
+        width: 100%;
+        z-index: 1;
+    }
+
+    .descripcionHome{
+        text-align: center;
+        color: black;
+        z-index: 10;
+        font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .descripcionHome h2{
+        font-size: 35px;  
+    }
+    .descripcionHome h3{
+        font-size: 20px;
+    }
+    .videoHeader{
+        display: none;
+    }
+    
+    .icon{
+        width: 30px;
+        border-radius: 10px;
+        padding: 20px 20px;
+        align-content: center;
+    }
+    .iconFoto{
+        width: 30px;
+    }
+    .iconText{
+        display: none;
+    }
+     /* PROYECTOS */
+
+    .cubesat{
+        flex-direction: column;
+    }
+    .cubesat img{
+        width: 100%;
+    }
+    .protesis{
+        flex-direction: column;
+    }
+    .protesis img{
+        width: 100%;
+    }
+    .impresoraMetal{
+        flex-direction: column;
+    }
+    .impresoraMetal img{
+        width: 100%;
+    }
+    .descProyecto{
+        flex-direction: column;
+    }
+    .tituloProyecto{
+        font-size: 35px;
+        background-color: rgba(78, 68, 68, 0.671) ;
+        margin: 0%;
+        padding: 0%;
+    }
+    .textoProyecto{
+        font-size: 20px;
+    }
+}
+
+/*#########################################################################################################*/
+/*                                                TABLETS 2                                                */
+/*#########################################################################################################*/
+@media (min-width:769px) and (max-width:1023px){
+
+     /* PROYECTOS */
+
+    .cubesat{
+        flex-direction: column;
+    }
+    .cubesat img{
+        width: 50%;
+    }
+    .protesis{
+        flex-direction: column;
+    }
+    .protesis img{
+        width: 50%;
+    }
+    .impresoraMetal{
+        flex-direction: column;
+    }
+    .impresoraMetal img{
+        width: 50%;
+    }
+    .descProyecto{
+        flex-direction: column;
+    }
+    .tituloProyecto{
+        font-size: 35px;
+        background-color: rgba(78, 68, 68, 0.671) ;
+        margin: 0%;
+        padding: 0%;
+    }
+    .textoProyecto{
+        font-size: 20px;
+    }
+}
