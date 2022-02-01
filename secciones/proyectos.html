@@ -3,6 +3,7 @@
 
 <head>
     <title>Print4All</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="../imagenes/print4allpng.png">
     <link rel="stylesheet" href="../estilos/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
@@ -11,48 +12,171 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 </head>
-<body id="gridAreasProyectos">
-    <header id="cabeza" class="cabezaFlex">
-        <!-- <img class="logotipo" src="imagenes/logopng.png" alt="cerebro"> -->
-        <h2 class="logo">Print4All</h2>
-        <!--<section class="slogan">Printing Dreams</section>-->
-        <nav class="menu">
-            <span class="itemMenu"><a href="../index.html">INICIO</a></span>
-            <span class="itemMenu"><a href="quienes.html">NOSOTROS</a></span>
-            <span class="itemMenu"><a href="dise.html">DISEÑOS</a></span>
-            <span class="itemMenu"><a href="proyectos.html">PROYECTOS</a></span>
-            <span class="itemMenu"><a href="contacto.html">CONTACTO</a></span>
-        </nav>
+
+<body class="fondoGeneral">
+    <header class="d-flex justify-content-between text-center align-items-center fondoCabeza">
+        <div >
+            <a class="navbar-brand fuenteP4A  menuGris" href="#">
+              <img src="../imagenes/logopng.png" alt="" width="50" height="50" class="align-text-center">
+              PRINT4ALL
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item itemMenu">
+                        <a class="nav-link active  menuGris" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item itemMenu">
+                        <a class="nav-link  menuGris" href="quienes.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item itemMenu">
+                        <a class="nav-link  menuGris" href="dise.html">DISEÑOS</a>
+                      </li>
+                      <li class="nav-item itemMenu">
+                        <a class="nav-link  menuGris" href="proyectos.html">PROYECTOS</a>
+                      </li>
+                      <li class="nav-item itemMenu">
+                          <a class="nav-link  menuGris" href="contacto.html">CONTACTO</a>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        
     </header>
+
     <main>
-        <h2 id="tituloProyectos">Proyectos</h2>
-        <h3 id="subtituloProyectos">Algunos desarrollos propios</h3>
-        <section id="proyect">
-            <div id="proyectoCubeSat" class="cubesat" >
-                <img src="../imagenes/cubesatrecorte.jpg" alt="cubesat" class="animate__animated animate__fadeIn">
-                <div class="descProyecto" >
-                    <h5 class="tituloProyecto" >CubeSat</h5>
-                    <h6 class="textoProyecto">Empresas privadas confian en nuestros desarrollos de los nanosatelites para distitos propositos tales como comunicacion e imagenes, entre otros. Enteramente desarrollados por nuestros ingenieros y diseñadores, el primer prototipo fue enviado a orbira en el año 2018, el cual permitio la adquisicion de datos de las orbitas y algunas imagenes.</h6>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col bg-secondary border border-top-0 border-2 border-dark text-center">
+                  <h2 class="fuenteTextos">Proyectos</h2>
+              </div>
+          </div>
+          <div class="row">
+              <div class="d-flex justify-content-evenly">
+                  <div class="d-flex text-center pt-2 pb-1">
+                      <h1 class="funenteTitulo">ALGUNOS DESARROLLOS PROPIOS
+                      </h1>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="d-flex justify-content-evenly">
+                <div class="d-flex text-center pt-1 pb-2">
+                    <h5 class="fuenteTextos">Grandes proyectos en los que estamos involucrados
+                    </h5>
                 </div>
             </div>
-            <div id="proyectoProtesis" class="protesis">
-                <img src="../imagenes/protesis.jpg" alt="manoImpresa" class="animate__animated animate__fadeIn">
-                <div class="descProyecto">
-                    <h5 class="tituloProyecto">Protesis Impresas</h5>
-                    <h6 class="textoProyecto">Desarrollamos protesis a medida para nuestros clientes, ya sean empresas, hospitales o particulares. Diseñamos y fabricamos las mismas desde cero ya sea para miembros superiores,  inferiores, odontologicas y para animales.</h6>
-                </div>            
+        </div>
+        </div>
+
+        <div class="container-fluid d-none d-lg-block">
+          <div class="row mb-2 animacion1">
+            <div class="col">
+              <img src="../imagenes/cubesat2.jpg" class="img-fluid rounded" alt="...">
             </div>
-            <div id="proyectoImpresora" class="impresoraMetal" >
-                <img src="../imagenes/impresionMetal.jpg" alt="imprimiendoEnTorno" class="animate__animated animate__fadeIn">
-                <div class="descProyecto">
-                    <h5 class="tituloProyecto">Impresión En Metal</h5>
-                    <h6 class="textoProyecto">Somos una de las primeras empresas privadas en la Argentina en estar desarrollando nuestra propia impresora para piezas metalicas. Dicho proyecto tiene fecha de finalizacion para el año 2022. Y al igual que todos nuestros servicios estara disponible para tanto empresas como particulares.</h6>
-                </div>
+            <div class="col">
+              <div class="row fuenteTextos fs-2">
+                CubeSat
+              </div>
+              <div class="row fuenteTextos fs-5">
+                Empresas privadas confian en nuestros desarrollos de los nanosatelites para distitos propositos tales como comunicacion e imagenes, entre otros. Enteramente desarrollados por nuestros ingenieros y diseñadores, el primer prototipo fue enviado a orbira en el año 2018, el cual permitio la adquisicion de datos de las orbitas y algunas imagenes.
+              </div>
             </div>
-        </section>
-        <!-- <a href="#arriba">Ir arriba</a> -->
+          </div>
+          <hr>
+          <div class="row mb-2 animacion2">
+            <div class="col">
+              <img src="../imagenes/protesis2.jpg" class="img-fluid rounded" alt="...">
+            </div>
+            <div class="col">
+              <div class="row fuenteTextos fs-2">
+                Protesis Impresas
+              </div>
+              <div class="row fuenteTextos fs-5">
+                Desarrollamos protesis a medida para nuestros clientes, ya sean empresas, hospitales o particulares. Diseñamos y fabricamos las mismas desde cero ya sea para miembros superiores, inferiores, odontologicas y para animales.
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="row mb-2 animacion3">
+            <div class="col">
+              <img src="../imagenes/impresionMetal2.jpg" class="img-fluid rounded" alt="...">
+            </div>
+            <div class="col">
+              <div class="row fuenteTextos fs-2 ">
+                Impresión En Metal
+              </div>
+              <div class="row fuenteTextos fs-5">
+                Somos una de las primeras empresas privadas en la Argentina en estar desarrollando nuestra propia impresora para piezas metalicas. Dicho proyecto tiene fecha de finalizacion para el año 2022. Y al igual que todos nuestros servicios estara disponible para tanto empresas como particulares.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESARROLLOS PARA DISPLAY MEDIANO Y CHICO -->
+        <div class="d-flex flex-column d-lg-none">
+          <figure class="figure">
+            <img src="../imagenes/cubesat2.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption text-dark border-bottom border-1 border-dark">
+              <div class="row fuenteTextos ms-2 me-2 fs-4 bg-secondary opacity-50">
+                <div class="text-dark">CubeSat</div>
+              </div>
+              <div class="row fuenteTextos ms-2 me-2 fs-6">
+                Empresas privadas confian en nuestros desarrollos de los nanosatelites para distitos propositos tales como comunicacion e imagenes, entre otros. Enteramente desarrollados por nuestros ingenieros y diseñadores, el primer prototipo fue enviado a orbira en el año 2018, el cual permitio la adquisicion de datos de las orbitas y algunas imagenes.
+              </div>
+            </figcaption>
+          </figure>
+  
+  
+          <figure class="figure">
+            <img src="../imagenes/protesis2.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption text-dark border-bottom border-1 border-dark">
+              <div class="row fuenteTextos ms-2 me-2 fs-4 bg-secondary opacity-50">
+                <div class="text-dark">Protesis Impresas</div>
+              </div>
+              <div class="row fuenteTextos ms-2 me-2 fs-6">
+                Desarrollamos protesis a medida para nuestros clientes, ya sean empresas, hospitales o particulares. Diseñamos y fabricamos las mismas desde cero ya sea para miembros superiores, inferiores, odontologicas y para animales.
+              </div>
+            </figcaption>
+          </figure>
+        
+  
+          <figure class="figure">
+            <img src="../imagenes/impresionMetal2.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption text-dark border-bottom border-1 border-dark">
+              <div class="row fuenteTextos ms-2 me-2 fs-4 bg-secondary opacity-50">
+                <div class="text-dark">Impresión En Metal</div>
+              </div>
+              <div class="row fuenteTextos ms-2 me-2 fs-6">
+                Somos una de las primeras empresas privadas en la Argentina en estar desarrollando nuestra propia impresora para piezas metalicas. Dicho proyecto tiene fecha de finalizacion para el año 2022. Y al igual que todos nuestros servicios estara disponible para tanto empresas como particulares.
+              </div>
+            </figcaption>
+          </figure>
+        </div>
     </main>
-    <footer>
-        <h5>Print4All® all right reserved</h5>
-    </footer>
+
+
+
+
+
+    <footer class="container-fluid p-1 bottom-0 bg-dark text-light text-center">
+      <h6>&copy PRINT4ALL</h6>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
+</html>
