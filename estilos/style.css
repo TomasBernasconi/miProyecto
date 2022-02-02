@@ -27,6 +27,9 @@
 .fondoGeneral{
     background-color: rgba(107, 110, 117, 0.692);
 }
+.thumbnail { 
+    position: relative; 
+   } 
 .caption { 
     position: absolute; 
     text-align: center;
