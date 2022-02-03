@@ -19,6 +19,9 @@
     font-style: italic;
     color: black;
 }
+.sinBorde{
+    --bs-gutter-x:0;
+}
 .fuenteTextos{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
