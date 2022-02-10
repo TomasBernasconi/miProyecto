@@ -1,0 +1,53 @@
+/* ANIMACIONES PROYECTOS */
+.animacion1{
+    animation-name: anima1;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.animacion2{
+    animation-name: anima2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.animacion3{
+    animation-name: anima3;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+@keyframes anima1 {
+    from{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+@keyframes anima2 {
+    from{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+    
+}
+@keyframes anima3 {
+    from{
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}

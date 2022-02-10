@@ -1,0 +1,15 @@
+/*   MEDIA   */
+
+@media (min-width:1024px){
+    .thumbnail{
+        background-image: none;
+        height: auto;
+    }
+    .video{
+        display: block;
+    }
+    .fondoNegro{
+     background-color: transparent;
+    }
+
+}

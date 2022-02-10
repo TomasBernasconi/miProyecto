@@ -1,0 +1,99 @@
+.sinBorde{
+    --bs-gutter-x:0;
+}
+.fuenteTextos{
+    font-family: $fuenteTextos;
+}
+.thumbnail { 
+    position: relative; 
+    background-image: url(../imagenes/laserfondo1.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   } 
+.video{
+    display:none;
+}
+.caption { 
+    position: absolute; 
+    text-align: center;
+    top: 0; 
+    bottom: 0rem;
+    left:0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; 
+    font-family:$fuenteTextos;
+   } 
+   .fondoNegro{
+    background-color: rgba(0, 0, 0, 0.5);
+   }
+/* ANIMACIONES INDEX */
+.animacionIndex1{
+    animation-name: animacion1;
+    animation-iteration-count: 1;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+.animacionIndex2{
+    animation-name: animacion2;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+.animacionIndex3{
+    animation-name: animacion3;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.animacionIndex4{
+    animation-name: animacion4;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+@keyframes animacion1 {
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}@keyframes animacion2 {
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}@keyframes animacion3 {
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}@keyframes animacion4 {
+    from{
+        transform: translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
