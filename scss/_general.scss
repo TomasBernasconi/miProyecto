@@ -1,6 +1,10 @@
+/* ##########################
+            GENERAL
+#############################*/
+
 .fondoCabeza{
     background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 90%);
+    background-image: linear-gradient(315deg, $fondo3 0%, $fondo4 90%);
     border:solid black;
 }
 ul{
@@ -26,12 +30,18 @@ li:hover{
     font-family: $fuenteP4A;
     font-size: 40px;
     font-style: italic;
-    color: $colorTexto1;
+    color: white;
 }
 .fondoGeneral{
-    background-color: rgba(107, 110, 117, 0.692);
+    background-color:$fondo1;
 }
 .fuenteTitulo{
     font-family: $fuenteP4A;
     font-size: 60px ;
+}
+.fondoTitulos1{
+    background-color: $fondo3;
+}
+.fondoTitulos2{
+    background-color: $fondo2;
 }

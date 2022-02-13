@@ -1,3 +1,8 @@
+$fondo1:#F2F2F2;
+$fondo2:#95A3BF;
+$fondo3:#5E6D8C;
+$fondo4:#152840;
+$fondo5:#111826;
 $colorTexto1:black;
 $colorTexto2:white;
 $fuenteP4A: 'Bebas Neue', cursive;
@@ -10,8 +15,8 @@ $fuenteTextos: 'Be Vietnam Pro', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import "_general";
-@import "_nosotros";
 @import "_inicio";
+@import "_nosotros";
 @import "_proyectos";
 @import "_media";
 
