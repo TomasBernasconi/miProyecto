@@ -2,14 +2,19 @@
             GENERAL
 #############################*/
 
+@mixin fondo($colorFondo,$transparencia){
+    background-color: $colorFondo;
+    opacity: $transparencia;
+}
+
 .fondoCabeza{
-    background-color: #485461;
+    @include fondo(#485461, 1);
     background-image: linear-gradient(315deg, $fondo3 0%, $fondo4 90%);
     border:solid black;
 }
 ul{
     li{
-        background-color: transparent;
+        @include fondo(transparent, 1);
         a{
             .menuGris{
                 text-decoration: none;
@@ -19,8 +24,7 @@ ul{
     }
 }
 li:hover{
-    background-color: white;
-    opacity: 0.1;
+    @include fondo(white, 0.1);
     border-radius: 5px;
 }
 .navbar-collapse{
@@ -33,15 +37,15 @@ li:hover{
     color: white;
 }
 .fondoGeneral{
-    background-color:$fondo1;
+    @include fondo($fondo1, 1);
 }
 .fuenteTitulo{
     font-family: $fuenteP4A;
     font-size: 60px ;
 }
 .fondoTitulos1{
-    background-color: $fondo3;
+    @include fondo($fondo3, 1);
 }
 .fondoTitulos2{
-    background-color: $fondo2;
+    @include fondo($fondo2, 1);
 }

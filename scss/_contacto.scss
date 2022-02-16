@@ -1,0 +1,39 @@
+/* ##########################
+            CONTACTO
+#############################*/
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: sticky;
+    width: 100%;
+    bottom: 10px;
+
+}
+
+$colores: (
+    ig: #C13584,
+    fb:#3b5998,
+    whatsapp:#25D366,
+);
+@each $nombre, $fondoIcono in $colores{
+    .icono-#{$nombre}{
+        background-color: $fondoIcono;
+        border: $fondoIcono;
+        margin: 4px;
+        padding: 5px;
+        border-radius: 15px;
+        transition: transform .5s;
+    }
+
+};
+.icono-ig:hover{
+    transform: scale(1.2);
+}
+.icono-fb:hover{
+    transform: scale(1.2);
+}
+.icono-whatsapp:hover{
+    transform: scale(1.2);
+}

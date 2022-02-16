@@ -12,16 +12,14 @@
     animation-delay: 0s;
 }
 .animacion2{
+    @extend .animacion1;
     animation-name: anima2;
-    animation-iteration-count: 1;
     animation-duration: 2s;
-    animation-delay: 0s;
 }
 .animacion3{
+    @extend .animacion1;
     animation-name: anima3;
-    animation-iteration-count: 1;
     animation-duration: 3s;
-    animation-delay: 0s;
 }
 @keyframes anima1 {
     from{
