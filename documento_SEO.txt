@@ -1,0 +1,91 @@
+	----- INDEX -----
+
+.Descripcion:
+	A travez de la etiqueta <meta name="description"...> agregue la siguiente descripcion del inicio:
+		"La innovacion es nuestro lema. Nos encargamos de solucionar y mejorar cada problema y aspecto que posean en su industria."
+
+.Palabras clave:
+	Con la etiqueta <meta name="keywords"..> agregue las siguientes palabras clave para identificar la pagina de inicio:
+		"Impresion, Desarrollo, Ingenieria, Fabricacion, Print4All"
+
+.Titulo:
+	Estableci como titulo
+		"Inicio - Print4All"
+
+.Encabezado:
+	Para el inicio no estableci ningun encabezado.
+__________________________________________________________________________________________________________________________________________
+
+	----- QUIENES -----
+
+.Descripcion:
+	A travez de la etiqueta <meta name="description"...> agregue la siguiente descripcion de la pagina:
+		"Nuestro personal a travez de su excelencia, capacidad y creatividad se encarga de solucionar tus problemas" 
+
+.Palabras clave:
+	Con la etiqueta <meta name="keywords"..> agregue las siguientes palabras clave para identificar la pagina de Quienes Somos:
+		"Impresion, Desarrollo, Ingenieria, Fabricacion, Persona, Print4All"
+
+.Titulo:
+	Estableci como titulo
+		"Nosotros - Print4All"
+
+.Encabezado:
+	Para esta pagina estableci como encabezado, a travez de un h2
+		Sobre Nosotros
+__________________________________________________________________________________________________________________________________________
+
+	----- DISEÑOS -----
+
+.Descripcion:
+	A travez de la etiqueta <meta name="description"...> agregue la siguiente descripcion de la pagina:
+		"Imprimimos y creamos piezas unicas como nuestros clientes. Metal, plastico, resina, lo que se te ocurra lo podemos lograr."
+
+.Palabras clave:
+	Con la etiqueta <meta name="keywords"..> agregue las siguientes palabras clave para identificar la pagina de Diseños:
+		"Impresion, Desarrollo, Diseño, Print4All, Fabricacion "
+
+.Titulo:
+	Estableci como titulo
+		"Diseños - Print4All"
+
+.Encabezado:
+	Para esta pagina estableci como encabezado, a travez de un h2
+		Diseños
+__________________________________________________________________________________________________________________________________________
+
+	----- PROYECTOS -----
+
+.Descripcion:
+	A travez de la etiqueta <meta name="description"...> agregue la siguiente descripcion de la pagina:
+		"Nuestros proyectos y clientes hablan por si solos. El desarrollo, la tecnologia utilizada y su funcionalidad demuestra que no hay problema que no podamos solucionar. "
+.Palabras clave:
+	Con la etiqueta <meta name="keywords"..> agregue las siguientes palabras clave para identificar la pagina de Proyectos:
+		"Impresion metal, Desarrollo, Protesis, Ingenieria, Print4All, CubeSat " 
+.Titulo:
+	Estableci como titulo
+		"Proyectos - Print4All"
+
+.Encabezado:
+	Para esta pagina estableci como encabezado, a travez de un h2
+		Proyectos
+__________________________________________________________________________________________________________________________________________
+
+	----- CONTACTO -----
+
+.Descripcion:
+	A travez de la etiqueta <meta name="description"...> agregue la siguiente descripcion dela pagina:
+		"Tu consulta nunca molesta. Decinos tus inquietudes, proyectos, sueños que lo hacemos realidad."
+
+.Palabras clave:
+	Con la etiqueta <meta name="keywords"..> agregue las siguientes palabras clave para identificar la pagina de Contacto:
+		"Impresion, Desarrollo, Print4All, Contacto, Fabricacion "
+
+.Titulo:
+	Estableci como titulo
+		"Contacto - Print4All"
+
+.Encabezado:
+	Para la pagina de contacto no estableci ningun encabezado.
+
+
