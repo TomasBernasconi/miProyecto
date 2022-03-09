@@ -58,7 +58,7 @@ li:hover {
 
 .thumbnail {
   position: relative;
-  background-image: url(../imagenes/inicio/laserfondo1.jpg);
+  background-image: url(../imagenes/inicio/laserfondo1-min.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -143,6 +143,10 @@ li:hover {
 
 .separador {
   height: 80px; }
+
+.colorBotones{
+  background-color:#95A3BF ;
+}
 
 /* ##########################
             PROYECTOS
